@@ -1,0 +1,31 @@
+<template name="tweetsItem">
+
+  <div class="col s12">
+
+    <div class="card-panel grey lighten-5 z-depth-1">
+      <div class="row valign-wrapper">
+
+        <div class="col s2 m2 l1">
+          <img src="{{ picture }}" alt="" class="circle responsive-img"/>
+        </div>
+
+        <div class="col s8 m8 l8">
+          <span class="black-text">
+            <p> {{ tweet }} </p>
+            <a href="https://www.twitter.com/{{userscreen}}" target="_blank">{{ user }}</a>
+            {{date}}
+          </span>
+        </div>
+
+        <div class="col s2 m2 l2">
+          <a href="{{pathFor 'tweetsPage'}}" class="waves-effect waves-light btn">
+            <i class="mdi-action-input"></i></a>
+          <a class="delete waves-effect waves-light btn red accent-2">
+            <i class="mdi-action-delete"></i></a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</template>

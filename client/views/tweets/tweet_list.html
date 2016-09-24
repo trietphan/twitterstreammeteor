@@ -1,0 +1,10 @@
+<template name="tweetsList">
+  <div class="container">
+    {{ > navBar }}
+    {{ > tweetsInfo }}
+    {{ > tweetsHtag }}
+    {{ #each tweets }}
+    {{ > tweetsItem }}
+    {{ /each }}
+  </div>
+</template>
